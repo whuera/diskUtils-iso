@@ -1,0 +1,12 @@
+pasos para crear iso desde mac:
+
+brew install wimlib
+
+diskutil list
+
+diskutil eraseDisk MS-DOS "WINDOWS11" MBR /dev/disk6
+
+
+rsync -vha --exclude=sources/install.wim /Volumes/CCCOMA_X64FRE_ES-MX_DV9/* /Volumes/WINDOWS11
+
+hdiutil mount /Users/whuera/Downloads/Win11_23H2_Spanish_Mexico_x64v2.iso
