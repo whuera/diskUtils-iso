@@ -14,5 +14,7 @@ hdiutil mount ~/Downloads/Win10_1903_V1_English_x64.iso
 
 
 rsync -vha --exclude=sources/install.wim /Volumes/CCCOMA_X64FRE_ES-MX_DV9/* /Volumes/WINDOWS11
+paso final:
+wimlib-imagex split /Volumes/CCCOMA_X64FRE_ES-MX_DV9/sources/install.wim /Volumes/WINDOWS11/sources/install.swm 3800
 
 hdiutil mount /Users/whuera/Downloads/Win11_23H2_Spanish_Mexico_x64v2.iso
