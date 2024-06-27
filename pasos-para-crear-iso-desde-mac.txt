@@ -6,6 +6,9 @@ diskutil list
 
 diskutil eraseDisk MS-DOS "WINDOWS11" MBR /dev/disk6
 
+mount device with win11:
+hdiutil mount ~/Downloads/Win10_1903_V1_English_x64.iso
+
 
 rsync -vha --exclude=sources/install.wim /Volumes/CCCOMA_X64FRE_ES-MX_DV9/* /Volumes/WINDOWS11
 
